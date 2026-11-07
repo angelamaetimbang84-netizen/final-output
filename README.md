@@ -23,23 +23,42 @@ while True:
         q1 = "Programming langauge is a special language that computers understand to perform tasks."
         print("")
         print("Q1:", q1)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "T":
             print("CORRECT")
             score += 1
         else:
             print("WRONG ANSWER, because the statement is correct.")
+
         q2 = "Python was created by Guido van Rossum in 1990 and designed for the beginners."
+        print("")
         print("Q2:", q2)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "F":
             print("CORRECT")
             score += 1
         else:
             print("WRONG ANSWER, because it was created in 1991")
+
         q3 = "Python is a high-level, easy-to-read programming language."
+        print("")
         print("Q3:", q3)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "T":
             print("CORRECT")
             score += 1
@@ -53,7 +72,12 @@ while True:
         q1 = "Python Syntax refers to the set of rules that tells us how to correctly write a program in Python."
         print("")
         print("Q1:", q1)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "T":
             print("CORRECT")
             score += 1
@@ -63,7 +87,12 @@ while True:
         q2 = "Case Sensitive is that Python treats uppercase & lowercase letters not differently."
         print("")
         print("Q2:", q2)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "F":
             print("CORRECT")
             score += 1
@@ -73,7 +102,12 @@ while True:
         q3 = "Indentation is required in Python to define blocks of code."
         print("")
         print("Q3:", q3)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "T":
             print("CORRECT")
             score += 1
@@ -83,7 +117,12 @@ while True:
         q4 = "A variable name can start with a number like: 1name."
         print("")
         print("Q4:", q4)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "F":
             print("CORRECT")
             score += 1
@@ -97,7 +136,12 @@ while True:
         q1 = "To add two numbers, use the + symbol."
         print("")
         print("Q1:", q1)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "T":
             print("CORRECT")
             score += 1
@@ -107,7 +151,12 @@ while True:
         q2 = "The - symbol subtracts one number from another."
         print("")
         print("Q2:", q2)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "T":
             print("CORRECT")
             score += 1
@@ -117,7 +166,12 @@ while True:
         q3 = "* is used for multiplication in Python."
         print("")
         print("Q3:", q3)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "T":
             print("CORRECT")
             score += 1
@@ -127,7 +181,12 @@ while True:
         q4 = "/ gives the remainder of a division"
         print("")
         print("Q4:", q4)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "F":
             print("CORRECT")
             score += 1
@@ -137,7 +196,12 @@ while True:
         q5 = "** is used for exponents, example: 2**3=8"
         print("")
         print("Q5:", q5)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "T":
             print("CORRECT")
             score += 1
@@ -148,10 +212,15 @@ while True:
         total_quiz = 6
         print("")
         print("[4] = If-Else Statements")
-        print("")
         q1 = "An if block runs only when its condition is True"
+        print("")
         print("Q1:", q1)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "T":
             print("CORRECT")
             score += 1
@@ -159,8 +228,14 @@ while True:
             print("WRONG ANSWER, because the statement is correct.")
 
         q2 = "An else block runs when the if condition is True"
+        print("")
         print("Q2:", q2)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "F":
             print("CORRECT")
             score += 1
@@ -168,8 +243,14 @@ while True:
             print("WRONG ANSWER, else runs when the condition is false.")
 
         q3 = "In if-elif-else, Python checks conditions from top to bottom."
+        print("")
         print("Q3:", q3)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "T":
             print("CORRECT")
             score += 1
@@ -177,8 +258,14 @@ while True:
             print("WRONG ANSWER, checks top first.")
 
         q4 = "The == symbol means if two values are equal."
+        print("")
         print("Q4:", q4)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "T":
             print("CORRECT")
             score += 1
@@ -186,8 +273,14 @@ while True:
             print("WRONG ANSWER, == means 'is equal to'.")
 
         q5 = "The != symbol means 'is not equal to."
+        print("")
         print("Q5:", q5)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "T":
             print("CORRECT")
             score += 1
@@ -195,8 +288,14 @@ while True:
             print("WRONG ANSWER, != means 'is not equal to'.")
 
         q6 = "Nested Statement means you cannot put an if statement inside another if statement."
+        print("")
         print("Q6:", q6)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "F":
             print("CORRECT")
             score += 1
@@ -207,10 +306,15 @@ while True:
         total_quiz = 5
         print("")
         print("[5] = Loops")
-        print("")
         q1 = "A loop repeats a block of code multiple times."
+        print("")
         print("Q1:", q1)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "T":
             print("CORRECT")
             score += 1
@@ -219,8 +323,14 @@ while True:
 
 
         q2 = "A 'for loop' repeats a fixed number of times."
+        print("")
         print("Q2:", q2)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "T":
             print("CORRECT")
             score += 1
@@ -228,8 +338,14 @@ while True:
             print("WRONG ANSWER, because the statement is correct.")
 
         q3 = "A 'while loop' repeats as long as a condition stays true."
+        print("")
         print("Q3:", q3)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "T":
             print("CORRECT")
             score += 1
@@ -237,8 +353,14 @@ while True:
             print("WRONG ANSWER, because the statement is correct.")
 
         q4 = "Never stop a loop once it starts."
+        print("")
         print("Q4:", q4)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "F":
             print("CORRECT")
             score += 1
@@ -246,8 +368,14 @@ while True:
             print("WRONG ANSWER, use 'break' to stop a loop.")
 
         q5 = "Loops cannot be nested."
+        print("")
         print("Q5:", q5)
-        user = input("Enter Answer (T OR F) :").upper()
+        while True:
+            user = input("Enter Answer (T OR F) :").upper()
+            if user in ("T", "F"):
+                break
+            else:
+                print("Enter T OR F ONLY!")
         if user == "F":
             print("CORRECT")
             score += 1
