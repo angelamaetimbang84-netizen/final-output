@@ -392,14 +392,19 @@ print("Congrats, learn from it!")
 
 
 
+print("===PYTHON TUTORIAL QUIZ===")
 
-print("===PYTHON TUTORIAL===")
+took1 = False
+took2 = False
+took3 = False
+took4 = False
+took5 = False
+selected_count = 0
 
 while True:
     print("")
     topic_list = ["TOPICS:", "1.Introduction to Programming", "2.Basic Syntax", "3.Arithmetic Operators",
                   "4.If-Else Statements", "5.Loops"]
-
     print(topic_list[0])
     print(topic_list[1])
     print(topic_list[2])
@@ -408,12 +413,45 @@ while True:
     print(topic_list[5])
     print("=====" * 5)
 
-    score = 0
-    selected_topic = int(input("Enter a topic number: "))
 
-    if selected_topic == 0 or selected_topic >5:
-        print("That's it!")
+    while True:
+        selected_topic = int(input("Enter a topic number (1-5): "))
+
+        if selected_topic < 1 or selected_topic > 5:
+            print("Choose only  numbers 1-5!")
+            continue
+
+        already_taken = False
+        if selected_topic == 1 and took1 == True:
+            already_taken = True
+        elif selected_topic == 2 and took2 == True:
+            already_taken = True
+        elif selected_topic == 3 and took3 == True:
+            already_taken = True
+        elif selected_topic == 4 and took4 == True:
+            already_taken = True
+        elif selected_topic == 5 and took5 == True:
+            already_taken = True
+
+        if already_taken == True:
+            print(f"Topic {selected_topic} was already taken! PICK AGAIN.")
+            continue
+
+        if selected_topic == 1:
+            took1 = True
+        elif selected_topic == 2:
+            took2 = True
+        elif selected_topic == 3:
+            took3 = True
+        elif selected_topic == 4:
+            took4 = True
+        elif selected_topic == 5:
+            took5 = True
+
+        selected_count = selected_count + 1
         break
+
+    score = 0
 
     if selected_topic == 1:
         total_quiz = 3
@@ -787,8 +825,12 @@ while True:
     if total_quiz > 0:
         print(f"Total Score: {score}/{total_quiz}")
 
-    take = input("\nStart new round? (T/F): ").upper()
-    if take != "T":
-        print("Retake Quiz Ended!")
+    if selected_count == 5:
+        print("ALL 5 TOPICS COMPLETED!")
+        break
 
+print("Congrats, learn from it!")
+
+          
+           
 print("Congrats, learn from it!")
